@@ -101,8 +101,9 @@ def hapus_transaksi(id_transaksi):
 
 @app.route("/tentang")
 def tentang():
-    """Menampilkan halaman identitas mahasiswa."""
+    """Menampilkan halaman tentang aplikasi dan anggota tim."""
     return render_template("tentang.html")
+
 
 if __name__ == "__main__":
     app.run(debug=True)
