@@ -104,6 +104,11 @@ def tentang():
     """Menampilkan halaman tentang aplikasi dan anggota tim."""
     return render_template("tentang.html")
 
+@app.route("/bantuan")
+def bantuan():
+    """Menampilkan halaman panduan penggunaan aplikasi."""
+    return render_template("bantuan.html")
+
 
 if __name__ == "__main__":
     app.run(debug=True)
